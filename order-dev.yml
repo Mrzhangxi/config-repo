@@ -2,7 +2,7 @@ spring:
   application:
     name: order
   datasource:
-      driver-class-name: com.mysql.cj.jdbc.Driver
+      driver-class-name: com.mysql.jdbc.Driver
       username: root
       password: 123654147a
       url: jdbc:mysql://localhost/springcloud_sell?useSSL=false&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
