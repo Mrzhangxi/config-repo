@@ -17,3 +17,15 @@ PRODUCT:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 env:
   aaaaaaaaaaa
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMillisecondes: 1000
+    getProductInfoList:
+      execution:
+        isolation:
+          thread:
+            timeoutInMillisecondes: 3000
